@@ -12,7 +12,7 @@
       delimiter: "."
       # Number of decimals, behind the separator (the number 1 with a precision of 2 gives: 1.00)
       precision: 2
-      
+
     # Used in number_to_currency()
     currency:
       format:
@@ -23,15 +23,15 @@
         # separator: "."
         # delimiter: ","
         # precision: 2
-        
+
     # Used in number_to_percentage()
     percentage:
       format:
         # These three are to override number.format and are optional
-        # separator: 
+        # separator:
         delimiter: ""
-        # precision: 
-        
+        # precision:
+
     # Used in number_to_precision()
     precision:
       format:
@@ -39,12 +39,12 @@
         # separator:
         delimiter: ""
         # precision:
-        
+
     # Used in number_to_human_size()
     human:
       format:
         # These three are to override number.format and are optional
-        # separator: 
+        # separator:
         delimiter: ""
         # precision: 1
       storage_units:
@@ -59,7 +59,7 @@
           mb: "MB"
           gb: "GB"
           tb: "TB"
-              
+
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
     distance_in_words:
@@ -101,13 +101,13 @@
       hour:   "Timme"
       minute: "Minut"
       second: "Sekund"
-        
+
   activerecord:
     errors:
       template:
         header:
-          one:    "Ett fel förhindrade denna {{model}} från att sparas"
-          other:  "{{count}} fel förhindrade denna {{model}} från att sparas"
+          one:    "Tyvärr så gick det inte att spara."
+          other:  "Tyvärr så gick det inte att spara."
         # The variable :count is also available
         body: "Det var problem med följande fält:"
       # The values :model, :attribute and :value are always available for interpolation
@@ -144,16 +144,16 @@
       #       attributes:
       #         login:
       #           blank: "This is a custom blank message for User login"
-      # Will define custom blank validation message for User model and 
+      # Will define custom blank validation message for User model and
       # custom blank validation message for login attribute of User model.
       # models:
-        
+
     # Translate model names. Used in Model.human_name().
     #models:
       # For example,
       #   user: "Dude"
       # will translate User model name to "Dude"
-    
+
     # Translate model attribute names. Used in Model.human_attribute_name(attribute).
     #attributes:
       # For example,
@@ -169,10 +169,10 @@
       default: "%Y-%m-%d"
       short: "%e %b"
       long: "%e %B, %Y"
-      
+
     day_names: [söndag, måndag, tisdag, onsdag, torsdag, fredag, lördag]
     abbr_day_names: [sön, mån, tis, ons, tor, fre, lör]
-      
+
     # Don't forget the nil at the beginning; there's no such thing as a 0th month
     month_names: [~, januari, februari, mars, april, maj, juni, juli, augusti, september, oktober, november, december]
     abbr_month_names: [~, jan, feb, mar, apr, maj, jun, jul, aug, sep, okt, nov, dec]
@@ -186,7 +186,7 @@
       long: "%d %B, %Y %H:%M"
     am: ""
     pm: ""
-            
+
 # Used in array.to_sentence.
   support:
     array:
