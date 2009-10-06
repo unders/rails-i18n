@@ -2,6 +2,8 @@
 # from http://github.com/daniel/swe_rails
 
 sv:
+
+  #http://github.com/rails/rails/tree/master/actionpack/lib/action_view/locale/en.yml?raw=true
   number:
     # Used in number_with_delimiter()
     # These are also the defaults for 'currency', 'percentage', 'precision', and 'human'
@@ -22,7 +24,7 @@ sv:
         # These three are to override number.format and are optional
         # separator: "."
         # delimiter: ","
-        # precision: 2
+        precision: 2
 
     # Used in number_to_percentage()
     percentage:
@@ -110,6 +112,10 @@ sv:
           other:  "Tyvärr så gick det inte att spara."
         # The variable :count is also available
         body: "Det var problem med följande fält:"
+
+
+
+      #http://github.com/rails/rails/tree/master/activerecord/lib/active_record/locale/en.yml
       # The values :model, :attribute and :value are always available for interpolation
       # The value :count is available when applicable. Can be used for pluralization.
       messages:
@@ -132,6 +138,7 @@ sv:
         less_than_or_equal_to: "måste vara mindre än eller lika med {{count}}"
         odd: "måste vara udda"
         even: "måste vara jämnt"
+        record_invalid: "Valideringen misslyckades: {{errors}}"
         # Append your own errors here or at the model/attributes scope.
 
       # You can define own errors for models or model attributes.
@@ -161,6 +168,10 @@ sv:
       #     login: "Handle"
       # will translate User attribute "login" as "Handle"
 
+
+
+
+  #http://github.com/rails/rails/tree/master/activesupport/lib/active_support/locale/en.yml
   date:
     formats:
       # Use the strftime parameters for formats.
@@ -194,9 +205,13 @@ sv:
       two_words_connector: " och "
       last_word_connector: " och "
 
+    select:
+      # default value for :prompt => true in FormOptionsHelper
+      prompt: "Välj ett alternativ" #"Please select"
 
 
 
+  # formtastic plugin
   formtastic:
     yes: 'Ja'
     no: 'Nej'
@@ -205,6 +220,8 @@ sv:
     submit: 'Skicka'
     required: 'Obligatorisk'
 
+
+  # clearance engine
   clearance:
     models:
       clearance_mailer:
